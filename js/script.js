@@ -63,3 +63,8 @@ student.totalCourses = function() {
 log(student.addCourse("Machine Learning"));
 log(`Total Courses Now: ${student.totalCourses()}`);
 
+// Bonus
+log(`<strong>Bonus Task: Average Score Calculation</strong>`);
+
+const averageScore = scores.reduce((sum, value) => sum + value, 0) / scores.length;
+log(`Average Score: ${averageScore.toFixed(2)}`);
