@@ -26,3 +26,14 @@ log(`JSON String: ${jsonString}`);
 
 const parsedStudent = JSON.parse(jsonString);
 log(`Parsed Student; Name: ${parsedStudent.name}, Age: ${parsedStudent.age}`);
+
+// Using Destructuring Assignment
+log(`<strong>Using Destructuring Assignment</strong>`);
+
+const { name, courses } = student;
+log(`Destructured Name: ${name}`);
+log(`Destructured Courses: ${courses.join(", ")}`);
+
+const scores = [85, 92, 78, 90];
+const [firstScore, secondScore] = scores;
+log(`First two scores: ${firstScore}, ${secondScore}`);
