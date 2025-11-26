@@ -17,3 +17,12 @@ const student = {
 log(`Name: ${student.name}`);
 log(`Age: ${student.age}`);
 log(`Info: ${student.displayInfo()}`);
+
+// Working with JSON
+log(`<strong>Working with JSON</strong>`);
+
+const jsonString = JSON.stringify(student);
+log(`JSON String: ${jsonString}`);
+
+const parsedStudent = JSON.parse(jsonString);
+log(`Parsed Student; Name: ${parsedStudent.name}, Age: ${parsedStudent.age}`);
