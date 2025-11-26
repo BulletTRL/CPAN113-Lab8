@@ -47,3 +47,19 @@ log(`Cloned Student: ${JSON.stringify(clonedStudent)}`);
 const newCourses = ["AI Basics", "Cloud Systems"];
 const mergedCourses = [...student.courses, ...newCourses];
 log(`Merged Courses: ${mergedCourses.join(", ")}`);
+
+// Object Methods
+log(`<strong>Part 5: Object Methods</strong>`);
+
+student.addCourse = function(course) {
+    this.courses.push(course);
+    return `${course} added successfully.`;
+};
+
+student.totalCourses = function() {
+    return this.courses.length;
+};
+
+log(student.addCourse("Machine Learning"));
+log(`Total Courses Now: ${student.totalCourses()}`);
+
