@@ -37,3 +37,13 @@ log(`Destructured Courses: ${courses.join(", ")}`);
 const scores = [85, 92, 78, 90];
 const [firstScore, secondScore] = scores;
 log(`First two scores: ${firstScore}, ${secondScore}`);
+
+// The Spread Operator
+log(`<strong>The Spread Operator</strong>`);
+
+const clonedStudent = { ...student, graduationYear: 2025 };
+log(`Cloned Student: ${JSON.stringify(clonedStudent)}`);
+
+const newCourses = ["AI Basics", "Cloud Systems"];
+const mergedCourses = [...student.courses, ...newCourses];
+log(`Merged Courses: ${mergedCourses.join(", ")}`);
